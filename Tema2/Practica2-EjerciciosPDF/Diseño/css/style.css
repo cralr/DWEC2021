@@ -76,9 +76,17 @@ footer>div#iconos{
 
 
 /*
-    Ejercicio1
+    Div texto ejercicios
 */
 #texto{
     text-align: center;
-    margin-top: 300px;
+    margin-top: 200px;
+}
+
+
+/* Div dni ejercicio 6 */
+
+#dni{
+    text-align: center;
+    margin-top: 200px;
 }
