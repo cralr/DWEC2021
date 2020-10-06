@@ -9,6 +9,8 @@
  */
 
 {
+    let elementoDiv;
+
     let init = function(){
         elementoDiv = document.getElementById("texto");
         mostrarMeses();
