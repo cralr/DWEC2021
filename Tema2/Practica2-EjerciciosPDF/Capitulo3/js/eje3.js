@@ -21,8 +21,8 @@
         let meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
         texto = "Los meses son: </br>";
 
-        for(let mes of meses){
-            texto += mes+ " ";
+        for(const mes of meses){
+            texto += mes+ " </br>";
         }
         elementoDiv.innerHTML = texto;
     }
