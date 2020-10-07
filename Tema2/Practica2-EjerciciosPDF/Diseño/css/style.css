@@ -93,7 +93,12 @@ footer>div#iconos{
 
 
 /* Div ejercicio 7 */
-#eje7{
+#eje7,#eje8,#eje9{
     text-align: center;
     margin-top: 200px;
+}
+
+#texto8,#texto9{
+    margin-top: 30px;
+    text-align: center;
 }
