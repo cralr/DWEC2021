@@ -102,8 +102,8 @@ footer>div#iconos{
 }
 
 
-/* Div ejercicio 7 */
-#eje7,#eje8,#eje9,#eje10{
+/* Div ejercicios*/
+#eje7,#eje8,#eje9,#eje10,#eje11,#eje12,#eje13{
     text-align: center;
     margin-top: 200px;
 }
@@ -111,4 +111,13 @@ footer>div#iconos{
 #texto8,#texto9,#texto10{
     margin-top: 30px;
     text-align: center;
+}
+
+/* Visibilidad texto eje12*/
+.visible{
+    display: inline;
+}
+
+.oculto{
+    display: none;
 }
