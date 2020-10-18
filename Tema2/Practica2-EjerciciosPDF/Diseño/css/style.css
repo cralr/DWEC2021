@@ -103,7 +103,7 @@ footer>div#iconos{
 
 
 /* Div ejercicios*/
-#eje7,#eje8,#eje9,#eje10,#eje11,#eje12,#eje13{
+#eje7,#eje8,#eje9,#eje10,#eje11,#eje12,#eje13,#eje14{
     text-align: center;
     margin-top: 200px;
 }
@@ -120,4 +120,42 @@ footer>div#iconos{
 
 .oculto{
     display: none;
+}
+
+/* Visibilidad texto eje12*/
+.block{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
+/*Ejercicio 15*/
+.raton{
+    background-color: #FFFFCC;
+}
+
+.teclado{
+    background-color: #CCE6FF;
+}
+
+.mueveRaton{
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*Ejercicio 16*/
+
+#eje16 {
+    width:160px;
+    border:thin solid rgb(140, 196, 29); 
+    padding:.5em; 
+    position:fixed;
+    margin-left: 650px;
+    margin-top: 100px;
+    text-align: center;
+}
+#eje16 h1 {
+    margin: 0;
 }
