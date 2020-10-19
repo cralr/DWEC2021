@@ -14,34 +14,24 @@
 
 {
     let init = function(){
-        let [...enlaces] = document.getElementsByTagName("a");
-        /* for (i in enlace){
-            enlace[i] = document.addEventListener("click",muestraOcultaParrafo);
-        } */
-        for (i in enlaces){
-            enlaces[i]= document.addEventListener("click",muestraOcultaParrafo);
+        for (const enlace of document.getElementsByTagName("a")){
+            enlace.addEventListener("click",muestraOcultaParrafo);
         }
     }
 
-
     let muestraOcultaParrafo = function(){
 
-        let [...parrafo] = document.getElementsByTagName("p"); 
-        let enlaces;
-
-        for (i in parrafo){
-            if(parrafo[i].style.display == "block"){
-                parrafo[i].style.display = "none"; 
-                //enlaces.innerHTML = "Mostrar Párrafo";
-            } 
-            else{
-                parrafo[i].style.display = "block"; 
-                //enlaces.innerHTML = "Ocultar Párrafo";
-            }
-        }
+        let parrafos = document.getElementById("parrafo_"+this.id);
         
+        if(parrafos.style.display=="block"){
+            parrafos.style.display="none";
+            this.innerHTML = "Mostrar párrafo";
+        }
+        else{
+            parrafos.style.display = "block";
+            this.innerHTML = "Ocultar párrafo";
+        }
     }
 
     document.addEventListener("DOMContentLoaded",init);
 }
-
