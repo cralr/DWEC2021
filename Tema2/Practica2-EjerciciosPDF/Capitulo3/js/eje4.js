@@ -34,8 +34,6 @@
         else
             texto += valores[0] + " OR " + valores[2] + " es False</br>";
 
-            valores.len
-
         //Resultado False
         texto += "2.2 Resultado False: ";
         if (valores[0] && valores[2])
