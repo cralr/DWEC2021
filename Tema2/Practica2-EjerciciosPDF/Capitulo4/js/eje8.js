@@ -22,18 +22,10 @@
         let num = document.getElementById("numero").value;
         let texto;
 
-        if (num % 2 == 0){
-            texto = "El número "+num+" es PAR.";
-        }
-        else{
-            texto = "El número "+num+" es IMPAR.";
-        }
+        (num %2 == 0) ? texto = "El número "+num+" es PAR." : texto = "El número "+num+" es IMPAR.";
 
-        elementoDiv.innerHTML = texto;
-
-        
+        elementoDiv.innerHTML = texto;        
     }
-
 
     document.addEventListener("DOMContentLoaded",init);
 }

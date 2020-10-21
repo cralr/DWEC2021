@@ -33,7 +33,7 @@
     //Ejercicio 2: Dirección a la que enlaza el penúltimo enlace.
 
     let penultimoEnlace = function(){
-        texto += "El penúltimo enlace es: "+enlaces[enlaces.length-4].href;
+        texto += "El penúltimo enlace es: "+enlaces[enlaces.length-4];
         elementoDiv.innerHTML = texto;
     }
 

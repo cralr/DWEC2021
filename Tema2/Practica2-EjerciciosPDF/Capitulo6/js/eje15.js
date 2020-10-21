@@ -26,9 +26,9 @@
         informacion = document.getElementById("eje15");
         let elementoBody = document.body;
 
-        elementoBody.onkeypress = muestraTecla;
-        elementoBody.onmousemove = cambiaColor;
-        elementoBody.onclick = muestraRaton;
+        elementoBody.addEventListener("keypress",muestraTecla);
+        elementoBody.addEventListener("click",cambiaColor);
+        elementoBody.addEventListener("mousemove",muestraRaton);
     }
 
     /**

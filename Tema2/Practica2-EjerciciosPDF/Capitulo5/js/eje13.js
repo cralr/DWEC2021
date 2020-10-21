@@ -15,19 +15,19 @@
 {
 
     let elemento;
-    let frase;
+    //let frase;
     let lista;
     let newElemento;
 
     let init = function(){
         elemento = document.createElement("li");
-        frase = document.createTextNode("Elemento de Prueba.");
+        //frase = document.createTextNode("Elemento de Prueba.");
         lista = document.getElementById("lista");
         document.addEventListener("click",annadirFrase)
     }
 
     let annadirFrase = function(){
-        elemento.appendChild(frase);
+        //elemento.appendChild(frase);
         lista.appendChild(elemento);
         newElemento = "<li>Texto de prueba</li>"
         lista.innerHTML += newElemento;

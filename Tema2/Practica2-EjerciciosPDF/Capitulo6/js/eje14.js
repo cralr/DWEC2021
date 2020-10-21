@@ -13,17 +13,22 @@
  */
 
 {
+    //Función inicial en la que se recorren las tag a del html para a cada una asignarle un click
     let init = function(){
-        for (const enlace of document.getElementsByTagName("a")){
+        for (const enlace of document.getElementsByTagName("a")){//console.log(enlace);
             enlace.addEventListener("click",muestraOcultaParrafo);
         }
     }
 
     let muestraOcultaParrafo = function(){
 
+        //console.log(this.id);
+        //kk = this; 
+
         let parrafos = document.getElementById("parrafo_"+this.id);
         
-        if(parrafos.style.display=="block"){
+        //Si el párrafo esta block o al iniciar, se pasa a none.
+        if(parrafos.style.display=="block" || parrafos.style.display==""){
             parrafos.style.display="none";
             this.innerHTML = "Mostrar párrafo";
         }

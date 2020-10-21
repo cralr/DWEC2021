@@ -9,33 +9,29 @@
  */
 
 {
-    
+
     let elementoDiv;
-    
-    let init = function(){
+
+    let init = function () {
         let boton = document.getElementById("boton");
-        boton.addEventListener("click",controlCadena);
+        boton.addEventListener("click", controlCadena);
     }
 
-    let controlCadena = function(){
+    let controlCadena = function () {
         elementoDiv = document.getElementById("texto9");
         let cadena = document.getElementById("frase").value;
         let texto;
 
-        if (cadena == cadena.toUpperCase()){
+        if (cadena == cadena.toUpperCase()) {
             texto = "La frase introducida está escrita en Mayúsculas.";
-        }
-        else if(cadena == cadena.toLowerCase()){
+        } else if (cadena == cadena.toLowerCase()) {
             texto = "La frase introducida está escrita en Minúculas.";
-        }
-        else
+        } else
             texto = "La frase introducida está escrita tanto en Mayúsculas como en Minúsculas."
 
         elementoDiv.innerHTML = texto;
-
-        
     }
 
 
-    document.addEventListener("DOMContentLoaded",init);
+    document.addEventListener("DOMContentLoaded", init);
 }

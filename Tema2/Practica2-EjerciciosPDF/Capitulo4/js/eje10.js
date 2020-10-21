@@ -11,36 +11,35 @@
 
 {
     let elementoDiv;
- 
-    let init = function(){
+
+    let init = function () {
         let boton = document.getElementById("boton");
-            boton.addEventListener("click", palindromo);
+        boton.addEventListener("click", palindromo);
     }
 
-    let palindromo = function(){
+    let palindromo = function () {
         elementoDiv = document.getElementById("texto10");
         let frase = document.getElementById("frase").value;
         let numCaracteres = frase.length;
         frase = frase.toLowerCase();
-        let cadenaEspacios="";
-        let cadenaInversa="";
+        let cadenaEspacios = "";
+        let cadenaInversa = "";
         let caracter;
         let texto;
 
-        for(i=0;i<numCaracteres;i++){
+        for (i = 0; i < numCaracteres; i++) {
             caracter = frase.charAt(i);
-    
-            if(caracter !=" "){
+
+            if (caracter != " ") {
                 cadenaEspacios = cadenaEspacios + caracter;
                 cadenaInversa = caracter + cadenaInversa;
             }
         }
-    
-        if(cadenaEspacios == cadenaInversa){
-            texto = ("La frase "+frase+" es un palíndromo.")
-        }
-        else{
-            texto = ("La frase "+frase+" no es un palíndromo.")
+
+        if (cadenaEspacios == cadenaInversa) {
+            texto = ("La frase " + frase + " es un palíndromo.")
+        } else {
+            texto = ("La frase " + frase + " no es un palíndromo.")
         }
 
         elementoDiv.innerHTML = texto;
@@ -48,4 +47,3 @@
     }
     document.addEventListener("DOMContentLoaded", init);
 }
-
