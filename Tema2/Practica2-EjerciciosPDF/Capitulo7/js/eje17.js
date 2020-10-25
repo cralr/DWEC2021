@@ -10,7 +10,7 @@
  */
 
 {
-    const Maximo_Caracteres = 50;
+    const MAXIMO_CARACTERES = 50;
 
     
     let elementoTextArea,
@@ -25,7 +25,7 @@
         elementoTextArea.addEventListener("keyup", mostrarCaracteres);
   
     }
-  
+
     /**
      * Se limita el no poder escribir más del máximo número de caracteres
      * @param {KeyEvent} evento 
@@ -42,7 +42,7 @@
             case 'Delete':
                 return;
         }
-        if (elementoTextArea.value.length >= Maximo_Caracteres)
+        if (elementoTextArea.value.length >= MAXIMO_CARACTERES)
             evento.preventDefault();
   
     }
@@ -50,7 +50,7 @@
      * Muesta mensajes sobre los caracteres que quedan por introducir
      */
     let mostrarCaracteres = function () {
-        elementoDiv.innerHTML = "Puedes escribir hasta " + (Maximo_Caracteres - elementoTextArea.value.length) + " caracteres.";
+        elementoDiv.innerHTML = "Puedes escribir hasta " + (MAXIMO_CARACTERES - elementoTextArea.value.length) + " caracteres.";
     }
   
     document.addEventListener("DOMContentLoaded", init );

@@ -103,7 +103,7 @@ footer>div#iconos{
 
 
 /* Div ejercicios*/
-#eje7,#eje8,#eje9,#eje10,#eje11,#eje12,#eje13,#eje14{
+#eje7,#eje8,#eje9,#eje10,#eje11,#eje12,#eje13,#eje14,#eje18{
     text-align: center;
     margin-top: 200px;
 }
@@ -169,5 +169,12 @@ footer>div#iconos{
 
 #texto17{
     margin-left: 630px;
+    margin-top: 50px;
+}
+
+/*Ejercicio 19*/
+
+#eje19{
+    text-align: center;
     margin-top: 50px;
 }
