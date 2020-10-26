@@ -9,8 +9,10 @@
 
 {
     let reloj;
+    
     let init = function() {
         reloj = document.getElementById("eje18");
+        mostrarReloj();
         setInterval(mostrarReloj,1000);
     }
 
